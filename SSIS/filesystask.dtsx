@@ -1,0 +1,299 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/20/2022 4:24:25 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ELW5210"
+  DTS:CreatorName="CORPINDIA\EI13067"
+  DTS:DTSID="{72DA1D2A-EA39-4091-B4E4-13BE13F9EC1A}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3008.28"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="filesystask"
+  DTS:PackageType="5"
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{C2ED6F8C-00D5-4550-B15C-F0FC510E83DD}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Book1.xls]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{936D2404-107F-4996-BA64-5B420AF91741}"
+      DTS:ObjectName="Book1.xls">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\EI13067\Documents\VS Files\Book1.xls" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[copy]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{CC5CF1FD-339F-46C4-9C7A-51C0304B0BD4}"
+      DTS:ObjectName="copy">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="2"
+          DTS:ConnectionString="C:\Users\EI13067\Documents\copy" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[copy 1]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{C7FB7FD5-114D-4BC0-BD1E-90C21480991A}"
+      DTS:ObjectName="copy 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="2"
+          DTS:ConnectionString="C:\Users\EI13067\Documents\copy" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[copy']"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{987A1E19-78B6-4C4E-B46B-117ED8C95E5B}"
+      DTS:ObjectName="copy'">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="2"
+          DTS:ConnectionString="C:\Users\EI13067\Documents\copy'" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[dest.txt]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{F1062F0D-B136-448F-BF13-7F5E536CF9BB}"
+      DTS:ObjectName="dest.txt">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\EI13067\Documents\VS Files\dest.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[dest.txt 1]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{30CA5ED4-FB12-441F-AE30-174462F34F0C}"
+      DTS:ObjectName="dest.txt 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\EI13067\Documents\VS Files\dest.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[desti.txt]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{532270C6-D648-449B-BE5E-B98053DF34DE}"
+      DTS:ObjectName="desti.txt">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\EI13067\Documents\destination\desti.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[destination]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{EC9D82ED-1150-4800-81A9-C6B3BB017670}"
+      DTS:ObjectName="destination">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="2"
+          DTS:ConnectionString="C:\Users\EI13067\Documents\destination" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[destination 1]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{6C4C1776-4975-4E89-BF0F-104EC563F01F}"
+      DTS:ObjectName="destination 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="2"
+          DTS:ConnectionString="C:\Users\EI13067\Documents\destination" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Documents]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{EE117DE2-76FB-43ED-9BF4-3F762345CC54}"
+      DTS:ObjectName="Documents">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="3"
+          DTS:ConnectionString="C:\Users\EI13067\Documents" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Downloads]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{20D7845E-F458-4867-A6CA-ACF942A382DC}"
+      DTS:ObjectName="Downloads">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="2"
+          DTS:ConnectionString="C:\Users\EI13067\Downloads" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[e.xlsx]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{2C000A1B-56EF-44FC-9D43-218B0169BBA4}"
+      DTS:ObjectName="e.xlsx">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="C:\Users\EI13067\Documents\VS Files\e.xlsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[emp1.xls]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{F77E94E0-932C-4E29-89A9-5833E5DF3315}"
+      DTS:ObjectName="emp1.xls">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\EI13067\Downloads\emp1.xls" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[employee]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{DE4C3667-8618-4509-B9FD-523F3AAA80D6}"
+      DTS:ObjectName="employee">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="employee" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[excel 1.xlsx]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{9415797A-D5D8-4801-8A0D-585CB052B426}"
+      DTS:ObjectName="excel 1.xlsx">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\EI13067\Documents\VS Files\excel 1.xlsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[flat 1.txt]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{228BE5C1-9635-4C5C-AB74-2F7D7B0EBC77}"
+      DTS:ObjectName="flat 1.txt">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\EI13067\Documents\VS Files\flat 1.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[flat_to_flat.txt]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{6005BC60-2660-431C-9268-695C7F83E75C}"
+      DTS:ObjectName="flat_to_flat.txt">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\EI13067\Documents\VS Files\flat_to_flat.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Jay]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{FAE41E37-65F9-41EE-89B9-EBC67C366003}"
+      DTS:ObjectName="Jay">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="3"
+          DTS:ConnectionString="C:\Users\EI13067\Documents\copy'\Jay" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[New folder]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{09FB8EC8-E06B-4213-9B37-D6C910EC0A33}"
+      DTS:ObjectName="New folder">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="3"
+          DTS:ConnectionString="C:\Users\EI13067\Documents\copy'\New folder" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[rewansolution.database.windows.net.dlithe.rewan 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8DAD757E-318F-4F03-8EFD-A29E32A8405E}"
+      DTS:ObjectName="rewansolution.database.windows.net.dlithe.rewan 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=rewansolution.database.windows.net;User ID=rewan;Initial Catalog=dlithe;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1gCrEjyLAUKDXbM9R4qIlgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADSTy2hPtpNlVJ/FLbIUFYzAAAAAASAAACgAAAAEAAAAC5+GPkVcBwuSM4bzpnG1X0YAAAAT0h0ZIFldefcG59B8nRtXHWUURhQzYV8FAAAAM6OBWfOhpZQoPEvQmqiC/5BYquD</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[VS Files]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{C498F2EB-362E-4077-B96E-0C283E964763}"
+      DTS:ObjectName="VS Files">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="3"
+          DTS:ConnectionString="C:\Users\EI13067\Documents\VS Files" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[VS Files 1]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{CDF7B478-BFEC-45B3-A7AF-E53A5AD1E015}"
+      DTS:ObjectName="VS Files 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="3"
+          DTS:ConnectionString="C:\Users\EI13067\Documents\VS Files" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\File System Task"
+      DTS:CreationName="Microsoft.FileSystemTask"
+      DTS:Description="File System Task"
+      DTS:DTSID="{D69DFB95-CE6F-48E0-8EC6-31F189765B47}"
+      DTS:ExecutableType="Microsoft.FileSystemTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="File System Task"
+      DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2017; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FileSystemData
+          TaskOperationType="RenameFile"
+          TaskSourcePath="{30CA5ED4-FB12-441F-AE30-174462F34F0C}"
+          TaskDestinationPath="{532270C6-D648-449B-BE5E-B98053DF34DE}" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="161.333333333334,42.6666666666667"
+          Id="Package\File System Task"
+          TopLeft="67.9976841719407,51.3791432672798" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
